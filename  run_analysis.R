@@ -62,8 +62,15 @@ run_analysis <- function() {
     
     colnames(new_data) <- colnames(reduced_set)
     
-    print(colnames(new_data))
-    dim(new_data)
+    new_data$Activity <- as.character(new_data$Activity)
+    new_data$Activity[new_data$Activity == 1] <- "walking"
+    new_data$Activity[new_data$Activity == 2] <- "walking_upstairs"
+    new_data$Activity[new_data$Activity == 3] <- "walking_downstairs"
+    new_data$Activity[new_data$Activity == 4] <- "sitting"
+    new_data$Activity[new_data$Activity == 5] <- "standing"
+    new_data$Activity[new_data$Activity == 6] <- "laying" 
+    
+    new_data <- new_data[order(new_data$User, new_data$Activity),]
     
     new_data
 }
