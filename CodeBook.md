@@ -1,7 +1,7 @@
 ## Code Book
 
 All variables are standardized, and therefore, unless otherwise indicated, have 
-values in the range [-1,1] (therefore, they are unitless). 
+values in the range \[-1,1\] (therefore, they are unitless). 
 
 ### [1] "User"
 
