@@ -68,7 +68,8 @@ run_analysis <- function() {
     new_data$Activity[new_data$Activity == 3] <- "walking_downstairs"
     new_data$Activity[new_data$Activity == 4] <- "sitting"
     new_data$Activity[new_data$Activity == 5] <- "standing"
-    new_data$Activity[new_data$Activity == 6] <- "laying" 
+    new_data$Activity[new_data$Activity == 6] <- "laying"
+    new_data$Activity <- as.factor(new_data$Activity)
     
     new_data <- new_data[order(new_data$User, new_data$Activity),]
     
