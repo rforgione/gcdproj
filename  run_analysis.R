@@ -1,15 +1,20 @@
 run_analysis <- function() {
     # function to merge train and test sets
     X_train <- read.table("data/train/X_train.txt")
-    X_test <- read.table("data/test/X_test.txt")
+    y_train <- read.table("data/train/y_train.txt")
     
-    complete_set <- rbind(X_train, X_test)
-    dim(complete_set)
+    X_test <- read.table("data/test/X_test.txt")
+    y_test <- read.table("data/test/y_test.txt")
+    
+    all_train <- cbind(X_train, y_train)
+    all_test <- cbind(X_test, y_test)
+    
+    complete_set <- rbind(all_train, all_test)
     
     # function to extract only mean and standard deviation for each measurement
-    features <- as.character(read.table("data/features.txt")[,2])
+    features <- c(as.character(read.table("data/features.txt")[,2]), "Activity")
     
-    relcol <- grep("mean\\(\\)|std\\(\\)", features)
+    relcol <- grep("mean\\(\\)|std\\(\\)|Activity", features)
     
     reduced_set <- complete_set[,relcol]
     dim(reduced_set)
@@ -46,17 +51,19 @@ run_analysis <- function() {
     reduced_set <- reduced_set[order(reduced_set$User),]
     
     new_data_cols <- dim(reduced_set)[2]
-    new_data_rows <- length(unique(reduced_set$User))
+    new_data_rows <- length(unique(reduced_set$User))*length(unique(reduced_set$Activity))
     
     new_data <- matrix(nrow=new_data_rows, ncol=new_data_cols)
     new_data <- as.data.frame(new_data)
     
     for (i in 1:length(new_data)) {
-        new_data[[i]] <- tapply(reduced_set[[i]], reduced_set$User, mean)
+        new_data[[i]] <- aggregate(reduced_set[[i]], list(reduced_set$User, reduced_set$Activity), mean)[[3]]
     }
     
     colnames(new_data) <- colnames(reduced_set)
     
     print(colnames(new_data))
     dim(new_data)
+    
+    new_data
 }
