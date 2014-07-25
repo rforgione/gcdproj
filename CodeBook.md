@@ -1,7 +1,7 @@
 ## Code Book
 
 All variables are standardized, and therefore, unless otherwise indicated, have 
-values in the range ### [-1,1] (therefore, they are unitless). 
+values in the range [-1,1] (therefore, they are unitless). 
 
 ### [1] "User"
 
@@ -63,29 +63,29 @@ along the Z axis.
 
 ### [14] "timeSignalBodyAccelerometerJerkMeanXAxis"
 
-Mean jerk time signal data from the body accelerometer along the X axis.
+Mean time signal jerk data from the body accelerometer along the X axis.
 
 ### [15] "timeSignalBodyAccelerometerJerkMeanYAxis"
 
-Mean jerk time signal data from the body accelerometer along the Y axis.
+Mean time signal jerk data from the body accelerometer along the Y axis.
 
 ### [16] "timeSignalBodyAccelerometerJerkMeanZAxis"
 
-Mean jerk time signal data from the body accelerometer along the Z axis.
+Mean time signal jerk data from the body accelerometer along the Z axis.
 
 ### [17] "timeSignalBodyAccelerometerJerkStandardDeviationXAxis"
 
-Standard deviation of jerk time signal data from the body accelerometer 
+Standard deviation of time signal jerk data from the body accelerometer 
 along the X axis.
 
 ### [18] "timeSignalBodyAccelerometerJerkStandardDeviationYAxis"
 
-Standard deviation of jerk time signal data from the body accelerometer 
+Standard deviation of time signal jerk data from the body accelerometer 
 along the Y axis.
 
 ### [19] "timeSignalBodyAccelerometerJerkStandardDeviationZAxis"
 
-Standard deviation of jerk time signal data from the body accelerometer 
+Standard deviation of time signal jerk data from the body accelerometer 
 along the Z axis.
 
 ### [20] "timeSignalBodyGyroscopeMeanXAxis"
@@ -114,29 +114,29 @@ Standard deviation of time signal data from the body gyroscope along the Z axis.
 
 ### [26] "timeSignalBodyGyroscopeJerkMeanXAxis"
 
-Mean jerk time signal data from the body gyroscope along the X axis.
+Mean time signal jerk data from the body gyroscope along the X axis.
 
 ### [27] "timeSignalBodyGyroscopeJerkMeanYAxis"
 
-Mean jerk time signal data from the body gyroscope along the Y axis.
+Mean time signal jerk data from the body gyroscope along the Y axis.
 
 ### [28] "timeSignalBodyGyroscopeJerkMeanZAxis"
 
-Mean jerk time signal data from the body gyroscope along the Z axis.
+Mean time signal jerk data from the body gyroscope along the Z axis.
 
 ### [29] "timeSignalBodyGyroscopeJerkStandardDeviationXAxis"
 
-Standard deviation of jerk time signal data from the body gyroscope along the
+Standard deviation of time signal jerk data from the body gyroscope along the
 X axis.
 
 ### [30] "timeSignalBodyGyroscopeJerkStandardDeviationYAxis"
 
-Standard deviation of jerk time signal data from the body gyroscope along the
+Standard deviation of time signal jerk data from the body gyroscope along the
 Y axis.
 
 ### [31] "timeSignalBodyGyroscopeJerkStandardDeviationZAxis"
 
-Standard deviation of jerk time signal data from the body gyroscope along the
+Standard deviation of time signal jerk data from the body gyroscope along the
 Z axis.
 
 ### [32] "timeSignalBodyAccelerometerMagnitudeMean"
@@ -158,11 +158,11 @@ Standard deviation of the magnitude of time signal data from the gravity acceler
 
 ### [36] "timeSignalBodyAccelerometerJerkMagnitudeMean"
 
-Mean magnitude of jerk time signal data from the body accelerometer.
+Mean magnitude of time signal jerk data from the body accelerometer.
 
 ### [37] "timeSignalBodyAccelerometerJerkMagnitudeStandardDeviation"
 
-Standard deviation of the magnitude of jerk time signal data from the body accelerometer.
+Standard deviation of the magnitude of time signal jerk data from the body accelerometer.
 
 ### [38] "timeSignalBodyGyroscopeMagnitudeMean"
 
@@ -174,11 +174,11 @@ Standard deviation of the magnitude of time signal data from the body gyroscope.
 
 ### [40] "timeSignalBodyGyroscopeJerkMagnitudeMean"
 
-Mean magnitude of jerk time signal data from the body gyroscope. 
+Mean magnitude of time signal jerk data from the body gyroscope. 
 
 ### [41] "timeSignalBodyGyroscopeJerkMagnitudeStandardDeviation"
 
-Standard deviation of the magnitude of jerk time signal data from the body gyroscope.
+Standard deviation of the magnitude of time signal jerk data from the body gyroscope.
 
 ### [42] "fourierSignalBodyAccelerometerMeanXAxis"
 
