@@ -73,5 +73,7 @@ run_analysis <- function() {
     
     new_data <- new_data[order(new_data$User, new_data$Activity),]
     
+    write.table(new_data, file="tidyData.txt")
+    
     new_data
 }
