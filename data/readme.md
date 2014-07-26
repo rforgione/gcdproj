@@ -17,7 +17,7 @@ A new data set is created with 180 rows (30 subjects x 6 activities per user) an
 
 Finally, the activity numbers are renamed to words that accurately reflect the given activities (i.e. 1 becomes "walking", 2 becomes "walking_upstairs", etc.) The as.factor function is run to ensure that the "Activity" column is of type 'factor'. The write.table function is used to write the new tidy dataset to 'tidyData.txt', and the dataset is returned by the function. 
 
-The resulting dataset should be 180 rows by 68 columns, and meets the following requirements:
+The resulting dataset is 180 rows by 68 columns, and meets the following requirements:
 
 * Merged training and test sets to create one data set
 * Extracted the measurements for the mean and standard deviation for each measurement
