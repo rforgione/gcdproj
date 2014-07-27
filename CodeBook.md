@@ -286,13 +286,12 @@ Standard deviation of magnitude of fourier transform jerk data from the body gyr
 
 ### [68] "Activity"
 
-An integer ranging from 1 to 6 reflecting the activity being performed by that subject. The
-numbers reflect the activities listed below:
-    1 = WALKING
-    2 = WALKING_UPSTAIRS
-    3 = WALKING_DOWNSTAIRS
-    4 = SITTING
-    5 = STANDING
-    6  LAYING
+An integer ranging from 1 to 6 reflecting the activity being performed by that subject. The numbers reflect the activities listed below:
+* 1 = WALKING
+* 2 = WALKING_UPSTAIRS
+* 3 = WALKING_DOWNSTAIRS
+* 4 = SITTING
+* 5 = STANDING
+* 6 = LAYING
 
 
